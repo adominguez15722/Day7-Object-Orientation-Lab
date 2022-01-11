@@ -192,8 +192,8 @@ let favoriteThings = {
 // function ingredients(food){
 
 //   let {carb, fat, protein} = food;
-//   let arr = [carb, fat, protein];
-
+//   let arr = [];
+//   arr.push(carb, fat, protein);
 //   return arr;
 // }
 
@@ -242,17 +242,17 @@ let favoriteThings = {
 
 //Code here
 
-class Cat {
-  constructor(name, age, color){
-    this.name = name;
-    this.age = age;
-    this.color = color;
-  };
-};
+// class Cat {
+//   constructor(name, age, color){
+//     this.name = name;
+//     this.age = age;
+//     this.color = color;
+//   };
+// };
 
-let cat1 = new Cat('billy', 12, 'red');
+// let cat1 = new Cat('billy', 12, 'red');
 
-console.log(cat1.name);
+// console.log(cat1.name);
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
@@ -264,6 +264,21 @@ console.log(cat1.name);
 
 //Code here
 
+class Wizard  {
+  constructor(name, age, favoriteSpell) {
+    this.name = name;
+    this.age = age;
+    this.favoriteSpell = favoriteSpell;
+    
+  };
+  castSpell() {
+    console.log(`${this.name} has cast ${this.favoriteSpell}`)
+  };
+};
+
+let wizKid = new Wizard('Anthony', 31, 'AVADA KEDAVRA!')
+
+wizKid.castSpell();
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
     Write a class called Phone. We'll use it as if we were creating
