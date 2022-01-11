@@ -6,10 +6,12 @@
 
 //Code here
 
-const me = {
-  name: 'Anthony',
-  age: '31'
-};
+// const me = {
+//   name: 'Anthony',
+//   age: '31'
+// };
+
+// console.log(me);
 
 
 //////////////////////////// PROBLEM 2 ////////////////////////////
@@ -21,7 +23,14 @@ const me = {
 
 //Code here
 
+let dog = {
+  name: 'Buddy',
+  color: 'Golden',
+  age: 4,
+  goodBoy: true
+};
 
+console.log(dog);
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
 /* Print out the name of the dog you created in problem 2 using dot-notation. */
