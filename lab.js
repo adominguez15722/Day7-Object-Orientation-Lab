@@ -23,14 +23,14 @@
 
 //Code here
 
-let dog = {
-  name: 'Buddy',
-  color: 'Golden',
-  age: 4,
-  goodBoy: true
-};
+// let dog = {
+//   name: 'Buddy',
+//   color: 'Golden',
+//   age: 4,
+//   goodBoy: true
+// };
 
-console.log(dog);
+// console.log(dog);
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
 /* Print out the name of the dog you created in problem 2 using dot-notation. */
@@ -44,7 +44,7 @@ console.log(dog);
 
 //Code here
 
-console.log(dog['color']);
+// console.log(dog['color']);
 
 //////////////////////////// PROBLEM 5 ////////////////////////////
 /*
@@ -54,6 +54,15 @@ console.log(dog['color']);
 
 //Code here
 
+let favoriteThings = {
+  band: 'Blink182',
+  food: 'Pizza',
+  person: 'Mom',
+  book: 'The Power of Habit',
+  movie: 'Inception',
+  holiday: 'Christmas'
+
+};
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'show' with the value being your favorite show.
@@ -61,6 +70,10 @@ console.log(dog['color']);
 
 //Code here
 
+favoriteThings.car = 'Ford Flex';
+favoriteThings.show = 'The Office';
+
+console.log(favoriteThings)
 
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
@@ -68,6 +81,10 @@ console.log(dog['color']);
 */
 
 //Code here
+
+favoriteThings.food = 'Chicken Nuggets'
+favoriteThings.book = 'Harry Potter'
+console.log(favoriteThings);
 
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
