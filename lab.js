@@ -70,10 +70,10 @@ let favoriteThings = {
 
 //Code here
 
-favoriteThings.car = 'Ford Flex';
-favoriteThings.show = 'The Office';
+// favoriteThings.car = 'Ford Flex';
+// favoriteThings.show = 'The Office';
 
-console.log(favoriteThings)
+// console.log(favoriteThings)
 
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
@@ -82,9 +82,9 @@ console.log(favoriteThings)
 
 //Code here
 
-favoriteThings.food = 'Chicken Nuggets'
-favoriteThings.book = 'Harry Potter'
-console.log(favoriteThings);
+// favoriteThings.food = 'Chicken Nuggets'
+// favoriteThings.book = 'Harry Potter'
+// console.log(favoriteThings);
 
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
@@ -103,6 +103,18 @@ var carDetails = {
 */
 
 //Code Here
+
+let {color: exterior} = carDetails;
+let {make: brand} = carDetails;
+let {model: type} = carDetails;
+let {year: modelYear} = carDetails;
+
+
+
+console.log(exterior);
+console.log(brand);
+console.log(type);
+console.log(modelYear);
 
 
 
