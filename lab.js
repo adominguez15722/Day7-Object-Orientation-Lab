@@ -151,29 +151,26 @@ let favoriteThings = {
 
 //Code Here
 
-let king = {
-  utah: 1,
-  california: 2,
-  texas: 3,
-  arizona: 4,
-};
+// let king = {
+//   utah: 1,
+//   california: 2,
+//   texas: 3,
+//   arizona: 4,
+// };
 
-function totalPopulation(objKing) {
-  // const { utah: state1 } = objKing;
-  // const { california: state2 } = objKing;
-  // const { texas: state3 } = objKing;
-  // const { arizona: state4 } = objKing;
+// function totalPopulation(objKing) {
+ 
 
-  let {utah, california, texas, arizona} = objKing;
+//   let {utah, california, texas, arizona} = objKing;
 
-  let total = utah + california + texas +arizona;
+//   let total = utah + california + texas +arizona;
 
-  return total;
+//   return total;
 
-  // console.log(state1 + state2 + state3 + state4);
-}
 
-console.log(totalPopulation(king));
+// }
+
+// console.log(totalPopulation(king));
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
@@ -186,6 +183,21 @@ console.log(totalPopulation(king));
 */
 
 //Code Here
+// let meal = {
+//   carb: 'Yum',
+//   fat: 'Meh',
+//   protein: 'Gains'
+// }
+
+// function ingredients(food){
+
+//   let {carb, fat, protein} = food;
+//   let arr = [carb, fat, protein];
+
+//   return arr;
+// }
+
+// console.log(ingredients(meal));
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
@@ -206,6 +218,10 @@ var user = {
 */
 
 //Code Here
+
+user.name = 'Bryan G. Smith';
+user.email = 'bryan.smith@devmounta.in';
+console.log(user);
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
