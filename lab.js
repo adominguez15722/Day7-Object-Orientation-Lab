@@ -90,12 +90,12 @@ let favoriteThings = {
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
 // Do not edit the code below.
-var carDetails = {
-  color: 'red',
-  make: 'toyota',
-  model: 'tacoma',
-  year: 1994
-}
+// var carDetails = {
+//   color: 'red',
+//   make: 'toyota',
+//   model: 'tacoma',
+//   year: 1994
+// }
 // Do not edit the code above.
 
 /*
@@ -104,17 +104,17 @@ var carDetails = {
 
 //Code Here
 
-let {color: exterior} = carDetails;
-let {make: brand} = carDetails;
-let {model: type} = carDetails;
-let {year: modelYear} = carDetails;
+// let {color: exterior} = carDetails;
+// let {make: brand} = carDetails;
+// let {model: type} = carDetails;
+// let {year: modelYear} = carDetails;
 
 
 
-console.log(exterior);
-console.log(brand);
-console.log(type);
-console.log(modelYear);
+// console.log(exterior);
+// console.log(brand);
+// console.log(type);
+// console.log(modelYear);
 
 
 
@@ -125,17 +125,27 @@ console.log(modelYear);
   Use object destructuring to save the object properties to new variables. 
   The property names are firstName, lastName, and title.
 */
+let obj = {
+  sir: 'Mr',
+  name1: 'Anthony',
+  name2: 'Dominguez'
+};
 
-function greeting( obj ) {
+function greeting(sir, name1, name2) {
   //Code Here
   
-  // Do not edit the code below.
+  let {sir: title} = obj;
+  let {name1: firstName} = obj;
+  let {name2: lastName} = obj;
+  
+
+  
+    // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
 
-
-
+console.log(greeting(obj));
 //////////////////////////// PROBLEM 8 ////////////////////////////
 
 /*
