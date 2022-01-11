@@ -201,14 +201,14 @@ let favoriteThings = {
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
-var user = {
-  name: "Bryan",
-  age: 24,
-  pwHash: "U+Ldlngx2BYQk",
-  email: "BryanSmith33@gmail.com",
-  birthday: "05/02/1990",
-  username: "bryansmith33",
-};
+// var user = {
+//   name: "Bryan",
+//   age: 24,
+//   pwHash: "U+Ldlngx2BYQk",
+//   email: "BryanSmith33@gmail.com",
+//   birthday: "05/02/1990",
+//   username: "bryansmith33",
+// };
 // Do not edit the code above.
 
 /*
@@ -219,9 +219,9 @@ var user = {
 
 //Code Here
 
-user.name = 'Bryan G. Smith';
-user.email = 'bryan.smith@devmounta.in';
-console.log(user);
+// user.name = 'Bryan G. Smith';
+// user.email = 'bryan.smith@devmounta.in';
+// console.log(user);
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
@@ -230,8 +230,8 @@ console.log(user);
 
 //Code Here
 
-delete user.age;
-console.log(user);
+// delete user.age;
+// console.log(user);
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
@@ -241,6 +241,18 @@ console.log(user);
 */
 
 //Code here
+
+class Cat {
+  constructor(name, age, color){
+    this.name = name;
+    this.age = age;
+    this.color = color;
+  };
+};
+
+let cat1 = new Cat('billy', 12, 'red');
+
+console.log(cat1.name);
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
