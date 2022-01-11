@@ -230,6 +230,9 @@ console.log(user);
 
 //Code Here
 
+delete user.age;
+console.log(user);
+
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
   Create a class called 'Cat'. Make sure to call your constructor, and require these 3 parameters: name, age, color.
