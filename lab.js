@@ -13,7 +13,6 @@
 
 // console.log(me);
 
-
 //////////////////////////// PROBLEM 2 ////////////////////////////
 
 //Create an object saved to the variable dog.
@@ -55,13 +54,12 @@
 //Code here
 
 let favoriteThings = {
-  band: 'Blink182',
-  food: 'Pizza',
-  person: 'Mom',
-  book: 'The Power of Habit',
-  movie: 'Inception',
-  holiday: 'Christmas'
-
+  band: "Blink182",
+  food: "Pizza",
+  person: "Mom",
+  book: "The Power of Habit",
+  movie: "Inception",
+  holiday: "Christmas",
 };
 
 /*
@@ -86,7 +84,6 @@ let favoriteThings = {
 // favoriteThings.book = 'Harry Potter'
 // console.log(favoriteThings);
 
-
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
 // Do not edit the code below.
@@ -109,14 +106,10 @@ let favoriteThings = {
 // let {model: type} = carDetails;
 // let {year: modelYear} = carDetails;
 
-
-
 // console.log(exterior);
 // console.log(brand);
 // console.log(type);
 // console.log(modelYear);
-
-
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
@@ -125,27 +118,27 @@ let favoriteThings = {
   Use object destructuring to save the object properties to new variables. 
   The property names are firstName, lastName, and title.
 */
-let obj = {
-  sir: 'Mr',
-  name1: 'Anthony',
-  name2: 'Dominguez'
-};
+// let obj = {
+//   title: 'Mr',
+//   firstName: 'Anthony',
+//   lastName: 'Dominguez'
+// };
 
-function greeting(sir, name1, name2) {
-  //Code Here
-  
-  let {sir: title} = obj;
-  let {name1: firstName} = obj;
-  let {name2: lastName} = obj;
-  
+// function greeting(personObj) {
+//   //Code Here
 
-  
-    // Do not edit the code below.
-  return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
-  // Do not edit the code above.
-}
+//   let {title, firstName, lastName} = personObj
 
-console.log(greeting(obj));
+//   personObj.title = 'Mrs'
+
+//   console.log(title);
+
+//     // Do not edit the code below.
+//   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
+//   // Do not edit the code above.
+// }
+// greeting(obj);
+// console.log(obj);
 //////////////////////////// PROBLEM 8 ////////////////////////////
 
 /*
@@ -158,7 +151,29 @@ console.log(greeting(obj));
 
 //Code Here
 
+let king = {
+  utah: 1,
+  california: 2,
+  texas: 3,
+  arizona: 4,
+};
 
+function totalPopulation(objKing) {
+  // const { utah: state1 } = objKing;
+  // const { california: state2 } = objKing;
+  // const { texas: state3 } = objKing;
+  // const { arizona: state4 } = objKing;
+
+  let {utah, california, texas, arizona} = objKing;
+
+  let total = utah + california + texas +arizona;
+
+  return total;
+
+  // console.log(state1 + state2 + state3 + state4);
+}
+
+console.log(totalPopulation(king));
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
@@ -172,17 +187,15 @@ console.log(greeting(obj));
 
 //Code Here
 
-
-
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
 var user = {
-  name: 'Bryan',
+  name: "Bryan",
   age: 24,
-  pwHash: 'U+Ldlngx2BYQk',
-  email: 'BryanSmith33@gmail.com',
-  birthday: '05/02/1990',
-  username: 'bryansmith33'
+  pwHash: "U+Ldlngx2BYQk",
+  email: "BryanSmith33@gmail.com",
+  birthday: "05/02/1990",
+  username: "bryansmith33",
 };
 // Do not edit the code above.
 
@@ -194,14 +207,12 @@ var user = {
 
 //Code Here
 
-
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
   Using the user object above, delete the users age off of the object.
 */
 
 //Code Here
-
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
@@ -211,8 +222,6 @@ var user = {
 */
 
 //Code here
-
-
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
@@ -249,7 +258,6 @@ var user = {
 
 //Code Here
 
-  
 /*
     Next make three new phone instances using your class.
     Send in values of your choice. They should match these data types:
@@ -267,10 +275,9 @@ var user = {
   don't forget to pass in a new price 
 
   Then console.log that object to see the price change
-*/ 
+*/
 
-//Code Here 
-
+//Code Here
 
 /*
   Now call the sell method on one of your other phone objects
@@ -278,8 +285,7 @@ var user = {
   Print the value of that phone's sell property to make sure it's been changed to true
 */
 
-//Code Here 
-
+//Code Here
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
 
@@ -291,15 +297,13 @@ var user = {
 
 //do not edit this object
 const colors = {
-  background: 'red',
-  highlight: 'blue',
-  text: 'yellow'
-}
+  background: "red",
+  highlight: "blue",
+  text: "yellow",
+};
 //do not edit this object
 
-//Code Here 
-
-
+//Code Here
 
 /*
  Now use the spread operator to combine the following 2 objects into one. 
@@ -309,27 +313,25 @@ const colors = {
 
 //do not edit the objects below
 const contactInfo = {
-  firstName: 'Helen',
-  lastName: 'Parr',
+  firstName: "Helen",
+  lastName: "Parr",
   phoneNumber: 1234445555,
-  email: 'helen@mymail.com',
-}
+  email: "helen@mymail.com",
+};
 
 const shippingInfo = {
-  firstName: 'Helen',
-  lastName: 'Parr',
-  street: '100 E. Main Street',
-  city: 'Anytown',
-  state: 'AZ',
+  firstName: "Helen",
+  lastName: "Parr",
+  street: "100 E. Main Street",
+  city: "Anytown",
+  state: "AZ",
   zipCode: 85004,
-}
+};
 //do not edit the objects above
 
 //Code Here
 
-
 //Print helensInfo to see what it looks like, there should be no repeating properties.
-
 
 //////////////////////////// PROBLEM 16 ////////////////////////////
 
@@ -343,15 +345,13 @@ const shippingInfo = {
   And finally, print the value of the mileage.
 */
 
-//Code Here 
-
+//Code Here
 
 /*
   Create a vehicle using your new class and save it to a variable called myFirstVehicle
 */
 
 //Code Here
-
 
 /* 
   Now we'll create a class that's based off of the vehicle class. 
@@ -367,7 +367,7 @@ const shippingInfo = {
   Create a Motorcycle using your new class and save it to a variable called myFirstMotorcycle
 */
 
-//Code Here 
+//Code Here
 
 /*
   Call the move function on myFirstMotorcycle (don't forget the parameter)
@@ -391,7 +391,6 @@ const shippingInfo = {
 
 //Code Here
 
-
 /*
   Create a new boat using your class. You can choose whatever values you like for all the 
   properties except isSeaworthy -- make that one false. Call your variable myFirstBoat.
@@ -409,7 +408,7 @@ const shippingInfo = {
   Now run the performMaintenance method on your boat
 */
 
-//Code Here 
+//Code Here
 
 /*
   Check the seaworthiness once more (you should be ready for the water!)
