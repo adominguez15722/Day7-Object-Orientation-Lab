@@ -264,21 +264,21 @@ let favoriteThings = {
 
 //Code here
 
-class Wizard  {
-  constructor(name, age, favoriteSpell) {
-    this.name = name;
-    this.age = age;
-    this.favoriteSpell = favoriteSpell;
+// class Wizard  {
+//   constructor(name, age, favoriteSpell) {
+//     this.name = name;
+//     this.age = age;
+//     this.favoriteSpell = favoriteSpell;
     
-  };
-  castSpell() {
-    console.log(`${this.name} has cast ${this.favoriteSpell}`)
-  };
-};
+//   };
+//   castSpell() {
+//     console.log(`${this.name} has cast ${this.favoriteSpell}`)
+//   };
+// };
 
-let wizKid = new Wizard('Anthony', 31, 'AVADA KEDAVRA!')
+// let wizKid = new Wizard('Anthony', 31, 'AVADA KEDAVRA!')
 
-wizKid.castSpell();
+// wizKid.castSpell();
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
     Write a class called Phone. We'll use it as if we were creating
@@ -304,6 +304,30 @@ wizKid.castSpell();
 
 //Code Here
 
+class Phone {
+  constructor(brand, model, storage, color, price, soldProperties){
+    
+    this.brand = brand;
+    this.model = model;
+    this.storage = storage;
+    this.color = color;
+    this.price = price;
+    this.soldProperties = false;
+  };
+
+  sell(){
+    this.soldProperties = true;
+    console.log(`${this.brand} ${this.model} has been sold`)
+  };
+
+  changePrice(newPrice){
+    this.price = newPrice;
+  }
+};
+
+
+
+
 /*
     Next make three new phone instances using your class.
     Send in values of your choice. They should match these data types:
@@ -316,6 +340,11 @@ wizKid.castSpell();
 
 //Code Here
 
+let phone1 = new Phone('Sprint', 'Flip', 214, 'Red', 600);
+let phone2 = new Phone('T-mobile', 'Galaxy', 500, 'Green', 800);
+let phone3 = new Phone('Nokia', 'Brick', 12, 'Grey', 50);
+
+
 /* 
   Call the changePrice function on one of your phones, 
   don't forget to pass in a new price 
@@ -325,6 +354,9 @@ wizKid.castSpell();
 
 //Code Here
 
+phone1.changePrice(500);
+console.log(phone1);
+
 /*
   Now call the sell method on one of your other phone objects
 
@@ -332,6 +364,9 @@ wizKid.castSpell();
 */
 
 //Code Here
+
+phone3.sell();
+console.log(phone3);
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
 
